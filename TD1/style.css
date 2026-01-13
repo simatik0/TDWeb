@@ -1,0 +1,122 @@
+h1 {
+    color : #740e35;
+}
+h2 {
+    color : #972f57;
+}
+h3 {
+    color : #c24c79;
+}
+p {
+    color : #d6a0b9;
+    font-size: 16px;
+}
+.premierp{
+    color : #ebe723;
+    font-size: 16px;
+    font-weight: bold;
+}
+li {
+    color : #d6a0b9;
+    font-size: 16px;
+    list-style: none;
+}
+.premierli {
+    color : #ebe723;
+    font-weight: bold;
+    text-align: start;
+}
+.deuxiemeli {
+    color : #740e35;
+    font-weight: bold;
+    text-align: center;
+}
+.troisiemeli {
+    color : #e98baf;
+    font-weight: bold;
+    text-align: end;
+}
+.divparent {
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+.container1 {
+    margin :auto;   
+    width: 50px;
+    height: 50px;
+    background-color: #5e1313;
+    border-radius: 50%;
+}
+.container2 {
+    margin :auto;   
+    width: 50px;
+    height: 50px;
+    background-color: #7fe74f;
+    border-radius: 50%;
+}
+.container3 {
+    margin :auto;   
+    width: 50px;
+    height: 50px;
+    background-color: #151e9c;
+    border-radius: 50%;
+}
+
+.divparent2 {
+    width: 25%;
+    height: 25%;
+    display: flex ;
+    flex-direction: column;
+}
+.div21 {
+    width: 50px;
+    height: 50px;
+    align-self: start;
+    background-color: #5e1358;
+    border-radius: 50%;
+
+}
+.div22 {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    background-color: #d32ec5;
+    border-radius: 50%;
+}
+.div23 {
+    width: 50px;
+    height: 50px;
+    align-self: end;
+    background-color: #ee4be0;
+    border-radius: 50%;
+}
+
+.divparent3 {
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    flex-direction: column;
+}
+.container31, .container32, .container33{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container31 {
+    background-color: #1b6b54;
+}
+.container32 {
+    background-color: #082926;
+}
+.container33 {
+    background-color: #68fcdc;
+}
+
+
+
+
