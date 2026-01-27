@@ -1,0 +1,28 @@
+.divexo1{
+    background-color: lightblue;
+    padding: 20px;
+}
+.divexo2{
+    padding: 30px;
+}
+.zone {
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    padding: 40px;
+    position: relative;
+}
+header{ 
+    background-color: #ffceef;
+    padding: 30px;
+}
+#scroll-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 0%;
+    background-color: red;
+    z-index: 1000;
+    transition: height 0.1s ease;
+}
