@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Salima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Style spécifique pour Auth si besoin, ou intégré dans style.css -->
+    <style>
+        .auth-toggle {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .auth-toggle a {
+            color: var(--primary-color);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🎮 Salima's Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="games.html">Mes Jeux</a></li>
+                <li><a href="auth.html" class="active">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Formulaire de Connexion -->
+        <div id="login-form" class="form-container">
+            <h2>Connexion</h2>
+            <form id="form-login">
+                <input type="email" id="login-email" placeholder="Votre Email" required>
+                <input type="password" id="login-password" placeholder="Votre Mot de passe" required>
+                <button type="submit" class="btn" style="width: 100%;">Se connecter</button>
+            </form>
+            <div class="auth-toggle">
+                Pas encore de compte ? <a id="show-register">S'inscrire</a>
+            </div>
+        </div>
+
+        <!-- Formulaire d'Inscription (Caché par défaut) -->
+        <div id="register-form" class="form-container hidden">
+            <h2>Inscription</h2>
+            <form id="form-register">
+                <input type="email" id="reg-email" placeholder="Votre Email" required>
+                <input type="password" id="reg-password" placeholder="Mot de passe (8 car. min)" required minlength="8">
+                <input type="password" id="reg-confirm" placeholder="Confirmer le mot de passe" required>
+                <button type="submit" class="btn" style="width: 100%;">S'inscrire</button>
+            </form>
+            <div class="auth-toggle">
+                Déjà un compte ? <a id="show-login">Se connecter</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Salima - Étudiante L3 MIAGE. </p>
+    </footer>
+
+    <!-- On charge auth.js spécifiquement ou main.js si on centralise tout -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

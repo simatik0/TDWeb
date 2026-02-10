@@ -1,0 +1,244 @@
+/* 
+   Thème Personnel : "Pink & Clean" de Salima 
+   Couleurs : Rose, Blanc, Gris foncé
+*/
+
+:root {
+    /* Palette de couleurs */
+    --primary-color: #d81b60;
+    /* Rose vif pour les actions */
+    --primary-hover: #ad1457;
+    /* Rose plus foncé au survol */
+    --secondary-color: #fce4ec;
+    /* Rose très pâle pour les fonds */
+    --text-color: #37474f;
+    /* Gris foncé pour le texte */
+    --heading-color: #880e4f;
+    /* Rose/Bordeaux pour les titres */
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(216, 27, 96, 0.1);
+
+    /* Espacements */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+}
+
+/* Reset de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Typographie --- */
+h1,
+h2,
+h3 {
+    color: var(--heading-color);
+    margin-bottom: var(--spacing-md);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--white);
+    padding: var(--spacing-md) var(--spacing-lg);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+nav a {
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* --- Main Content --- */
+main {
+    flex: 1;
+    /* Pousse le footer vers le bas */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--spacing-lg);
+}
+
+/* Section Hero (Accueil) */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--white);
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: var(--heading-color);
+    border-top: 1px solid rgba(216, 27, 96, 0.1);
+}
+
+/* --- Utilitaires --- */
+.container {
+    padding: var(--spacing-md);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- Formulaires (Pour plus tard) --- */
+.form-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* --- Liste des Jeux (Grid) --- */
+#games-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding-top: 20px;
+}
+
+/* Carte de jeu */
+.game-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.game-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.game-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.btn-play {
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}

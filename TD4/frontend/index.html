@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TD4 - Frontend</title>
+    <title>Salima's GameZone</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Welcome to TD4 Frontend</h1>
-    <p>This is the frontend of the TD4 project.</p>
 
+<body>
+
+    <!---------------------------------- Header avec Navigation ---------------------------------->
+    <header>
+        <h1>🎮 Salima's Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="games.html">Mes Jeux</a></li>
+                <li><a href="auth.html" id="auth-link">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---------------------------------- Contenu Principal ---------------------------------->
+    <main>
+
+        <!-- Section "Hero" : Présentation -->
+        <section class="hero">
+            <h2>Bienvenue sur mon Espace de Jeux !</h2>
+            <p>
+                Bonjour, je m'appelle <strong style="color: var(--primary-color);">Salima</strong>.
+                Ceci est mon projet de L3 MIAGE où je développe des jeux web interactifs.
+            </p>
+            <p>
+                Explorez ma collection, connectez-vous pour enregistrer vos scores et amusez-vous !
+            </p>
+            <a href="games.html" class="btn">Jouer maintenant 🚀</a>
+        </section>
+
+        <!-- Section À propos (Optionnelle) -->
+        <section class="container">
+            <h3>À propos de ce projet</h3>
+            <p>
+                Ce site répertorie mes differents jeux.
+            </p>
+        </section>
+
+    </main>
+
+    <!---------------------------------- Footer ---------------------------------->
+    <footer>
+        <p>© 2026 Salima - Étudiante L3 MIAGE.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
